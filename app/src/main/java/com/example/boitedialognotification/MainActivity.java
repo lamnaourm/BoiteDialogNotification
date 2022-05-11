@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void affichenot(View view) {
 
-        if(Build.VERSION.SDK_INT<=Build.VERSION_CODES.O) {
+        if(Build.VERSION.SDK_INT<Build.VERSION_CODES.O) {
             Notification.Builder n = new Notification.Builder(MainActivity.this);
             n.setContentTitle("Alerte de test");
             n.setContentText("Message de mon alerte ");
